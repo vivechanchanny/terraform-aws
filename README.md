@@ -19,7 +19,7 @@ This project aims to demonstrate the power and flexibility of Terraform for prov
 
 In this Proof of Concept (PoC), we'll showcase how Terraform can be used to:
 
-Provision a VPC with multiple subnets across different availability zones.
+Provision of a VPC with multiple subnets across different availability zones.
 Deploy EC2 instances with custom configurations, including instance types, AMIs, and security groups.
 Create application load balancers (ALBs) and attach them to EC2 instances.
 Manage networking configurations, including route tables, internet gateways, and NAT gateways.
@@ -29,8 +29,9 @@ Demonstrate best practices for infrastructure as code development, including cod
 To get started with this project, follow these steps:
 
 Clone the repository to your local machine:
-
+```sh
 git clone https://github.com/your-username/terraform-aws.git
+```
 Install Terraform by following the official installation instructions.
 
 Configure your AWS credentials using one of the following methods:
@@ -44,15 +45,18 @@ IAM roles (when running Terraform on an EC2 instance)
 Once you've installed Terraform and configured your AWS credentials, you can use the provided Terraform configurations to deploy infrastructure:
 
 ### Navigate to the project directory:
-
+```sh
 cd terraform-aws
+```
 ### Initialize Terraform:
-
+```sh
 terraform init
+```
 ### Review the execution plan:
 
-
+```sh
 terraform plan -out-tfplan
+```
 ### Apply the Terraform configuration:
 
 terraform apply tfplan
@@ -74,9 +78,9 @@ If you welcome contributions from the community, provide guidelines on how users
 
 The project includes automated tests to validate the correctness and reliability of the Terraform configurations. To run the tests, execute the following command:
 
-
+```sh
 terraform validate
-
+```
 ## Deployment
 
 The Terraform configurations can be deployed to any AWS account by following the installation and usage instructions provided in this README.md file.
