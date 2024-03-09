@@ -13,6 +13,7 @@ This project aims to demonstrate the power and flexibility of Terraform for prov
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Known Issues](#known-issues)
+- [Folder Structure](#folder-structure)
 - [License](#license)
 
 ## Overview
@@ -85,8 +86,29 @@ terraform validate
 The Terraform configurations can be deployed to any AWS account by following the installation and usage instructions provided in this README.md file.
 
 ## Known Issues
+- Application is not accessible from alb because others are in the public subnets
+- nginx is installed instead of wordpress
+- could not complete RDS Creation 
 
+## Folder Structure
 
+Folder Structure
+The project's folder structure is organized as follows:
+```sh
+terraform-aws/
+│
+├── modules/
+│   ├── vpc/
+│   ├── ec2_instance/
+│   ├── security_groups/
+│   ├── alb_dns/
+│   └── s3_bucket/
+│
+├── README.md
+├── main.tf
+├── variables.tf
+└── provider.tf
+```
 
 ## License
 
