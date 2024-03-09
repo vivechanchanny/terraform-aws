@@ -30,7 +30,7 @@ To get started with this project, follow these steps:
 
 Clone the repository to your local machine:
 ```sh
-git clone https://github.com/your-username/terraform-aws.git
+git clone https://github.com/vivechanchanny/terraform-aws.git
 ```
 Install Terraform by following the official installation instructions.
 
