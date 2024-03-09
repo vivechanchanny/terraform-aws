@@ -56,7 +56,7 @@ module "ec2_instance_us_east_1" {
   providers = {
     aws = aws.region1
   }
-  key_pair_name = "ChinnuAWS"
+  key_pair_name = "" # please provide your keypair
   ami_id        = "ami-0fe4bd75332a821e8"# Replace with your desired AMI ID
   instance_type = "t2.micro"            # Replace with your desired instance type
   instance_name = "wordpress-instance-east"   
@@ -71,7 +71,7 @@ module "ec2_instance_us_west_1" {
   providers = {
     aws = aws.region2
   }
-  key_pair_name = "Channy-vive"
+  key_pair_name = "" # please provide your keypair
   ami_id        = "ami-0a936a73bc4ebdebd" # Replace with your desired AMI ID
   instance_name = "wordpress-instance-west"   
   instance_type = "t2.micro"            # Replace with your desired instance type
