@@ -53,13 +53,13 @@ cd terraform-aws
 terraform init
 ```
 ### Review the execution plan:
-
 ```sh
 terraform plan -out-tfplan
 ```
 ### Apply the Terraform configuration:
-
+```sh
 terraform apply tfplan
+```
 Confirm the changes and proceed with the deployment by typing yes when prompted.
 
 ## Configuration
@@ -77,7 +77,6 @@ If you welcome contributions from the community, provide guidelines on how users
 ## Testing
 
 The project includes automated tests to validate the correctness and reliability of the Terraform configurations. To run the tests, execute the following command:
-
 ```sh
 terraform validate
 ```
