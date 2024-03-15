@@ -18,6 +18,11 @@ resource "aws_instance" "ec2_instance" {
     tags = {
     Name = var.instance_name
   }
+
+
+  # lifecycle {
+  # prevent_destroy = true
+  # }
 }
 
   # Add other necessary configurations for your EC2 instance
